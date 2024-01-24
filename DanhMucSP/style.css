@@ -12,7 +12,7 @@
 }
 
 .glass {
-    position: absolute;
+    /* position: absolute;
     background-color: rgb(255, 255, 255);
     width: 100%;
     overflow: hidden;
@@ -21,36 +21,149 @@
     transform: rotate(-30deg);
     margin-left: -5%;
     margin-top: -7%;
-    display: none;
+    display: none; */
+
+    position: absolute;
+    top: -40%;
+    left: -70%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: rotate(30deg);
+    /* transform: skewX(-30deg); */
+    z-index: 1;
 }
 
 .glassShow {
     width: 100%;
     height: 100%;
-    background-color: rgb(209, 26, 26);
-    opacity: 0.2;
-    position: absolute;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
     display: none;
+    position: absolute;
+
+}
+
+.DanhmucSP:hover>.glassShow {
+
+    /* Bắt đầu với opacity là 0 để ẩn phần tử */
+    transition: opacity 0.3s 0.5s;
+    /* Thuộc tính cần thực hiện transition và delay 3s */
+    display: block;
+    z-index: 2;
+    transform: scale(2);
+
+}
+
+.mucngang {
+    height: 2px;
+    width: 50%;
+    left: 0;
+    z-index: 2;
+    bottom: 60px;
+    transform: scaleX(0);
+    transform-origin: left;
+    position: absolute;
+    background: red;
+    transition-duration: 0.5s;
+    transition-delay: 0.8s;
+}
+
+.mucdoc {
+    width: 2px;
+    height: 100%;
+    left: 60px;
+    z-index: 2;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    background: red;
+    transition-duration: 0.5s;
+    transition-delay: 0.8s;
+}
+
+.DanhmucSP:hover>.mucngang {
+    transform: scaleY(1);
+    /* Khi hover vào, thay đổi scaleY thành 1 để phần tử dài ra */
+}
+
+.DanhmucSP:hover>.mucdoc {
+    transform: scaleY(1);
+    /* Khi hover vào, thay đổi scaleY thành 1 để phần tử dài ra */
+}
+
+.DanhmucSP:hover>.glassShow:hover {
+
+    transform: scale(2);
+    /* Khi hover vào .glassShow, hiển thị nó bằng cách đặt opacity là 1 */
 }
 
 .DanhmucSP:hover>.glass {
-    display: block;
 
-    animation: GlassNow 0.5s reverse;
+
+    animation: GlassNow 2s normal;
+
+
+
 }
 
-@keyframes GlassNow {
-    from {
+.imgicon {
+    width: 0px;
+    bottom: 0;
+    height: 0px;
+    left: 0;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    position: absolute;
+}
 
-        width: 100%;
-        height: 100%
+.imgicon:hover {
+    animation: Sacle 1s normal;
+    z-index: 2;
+}
+
+@keyframes Sacle {
+    from {
+        height: 0px;
+        width: 0px;
     }
 
     to {
         height: 30px;
-        width: 40%;
-        transform: scale(2);
+        width: 30px;
     }
+}
+
+@keyframes ShowDoc {
+    from {
+        width: 2px;
+        height: 100%;
+    }
+
+    to {}
+}
+
+@keyframes GlassNow {
+    from {
+        height: 30px;
+        width: 40%;
+
+
+    }
+
+    to {
+
+        transform: scale(2);
+        width: 700px;
+        height: 700px;
+
+    }
+
+
+
 }
 
 .DanhmucSP-img {
