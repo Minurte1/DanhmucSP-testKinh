@@ -76,6 +76,7 @@
 }
 
 .contenlogo {
+    height: 50px;
     position: absolute;
     text-align: right;
     font-size: 14px;
@@ -225,4 +226,71 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 991.98px) {
+    .DanhmucSP {
+        margin-bottom: 20px;
+        /* Điều chỉnh khoảng cách giữa các sản phẩm */
+    }
+
+    .contenlogo {
+        font-size: 10px;
+        right: 60%;
+        width: 25%;
+        bottom: 30%;
+    }
+
+    .DanhmucSP:hover>.contenlogo {
+        /* transition: transform 0.5s ease; */
+        animation: ShowContent 1s normal forwards;
+    }
+
+    .mucngang {
+        height: 2px;
+        width: 20%;
+        left: 0;
+        z-index: 2;
+        bottom: 60px;
+        transform: scaleX(0);
+        transform-origin: left;
+        position: absolute;
+        background: red;
+        transition-duration: 0.5s;
+        transition-delay: 0.8s;
+    }
+}
+
+/* Responsive styling cho điện thoại */
+@media (max-width: 767.98px) {
+    .DanhmucSP {
+        margin-bottom: 20px;
+        /* Điều chỉnh khoảng cách giữa các sản phẩm */
+    }
+
+    .contenlogo {
+        font-size: 10px;
+        right: 20%;
+        width: 50%;
+        bottom: 30%;
+    }
+
+    .DanhmucSP:hover>.contenlogo {
+        /* transition: transform 0.5s ease; */
+        animation: ShowContent 1s normal forwards;
+    }
+
+    .mucngang {
+        height: 2px;
+        width: 50%;
+        left: 0;
+        z-index: 2;
+        bottom: 60px;
+        transform: scaleX(0);
+        transform-origin: left;
+        position: absolute;
+        background: red;
+        transition-duration: 0.5s;
+        transition-delay: 0.8s;
+    }
 }
