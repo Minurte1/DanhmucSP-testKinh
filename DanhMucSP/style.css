@@ -141,8 +141,6 @@
 }
 
 .DanhmucSP:hover>.glass {
-
-
     animation: GlassNow 2s normal;
 
 
@@ -213,8 +211,8 @@
 }
 
 .DanhmucSP-img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 
 
 }
@@ -293,4 +291,33 @@
         transition-duration: 0.5s;
         transition-delay: 0.8s;
     }
+}
+
+
+
+
+
+.container-vechungtoi {
+    width: 95%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.container-vechungtoi_thongtin>h1 {
+    margin-bottom: 5%;
+    margin-top: -5%;
+    color: #0991cb;
+}
+
+.container-vechungtoi_img {
+    margin-left: 2%;
+    margin-right: -2%;
+}
+
+.container-vechungtoi_img>img {
+    max-width: 400px;
+    max-height: 400px;
 }
