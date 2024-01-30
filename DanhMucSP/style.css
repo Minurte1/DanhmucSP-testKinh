@@ -1,3 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrap-container {
+    height: auto;
+    width: 100%;
+}
+
+.vechungtoi {
+    font-size: 30px;
+    color: #0991cb;
+    font-weight: 500;
+
+}
+
+.container-vechungtoi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
 .container-DanhmucSP1 {
     width: 100%;
     height: 300px;
@@ -15,23 +53,7 @@
     margin-right: 20px;
 }
 
-* {
-    padding: 0px;
-    margin: 0px;
-}
 
-.container {
-    height: auto;
-    width: 100%;
-
-}
-
-.vechungtoi {
-    font-size: 30px;
-    color: #0991cb;
-    font-weight: 500;
-
-}
 
 .tieudedanhmuc {
     font-size: 30px;
@@ -267,6 +289,11 @@
 
 }
 
+.col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
 .container-DanhmucSP2 {
 
     width: 100%;
@@ -287,6 +314,11 @@
         right: 60%;
         width: 25%;
         bottom: 30%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .DanhmucSP:hover>.contenlogo {
@@ -316,6 +348,36 @@
         /* Điều chỉnh khoảng cách giữa các sản phẩm */
     }
 
+    .container-vechungtoi {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-vechungtoi_img>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .row-width {
+        width: 140%;
+        z-index: 4;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .DanhmucSP-img {
+        height: auto;
+        width: 100%;
+
+
+    }
+
     .contenlogo {
         font-size: 10px;
         right: 20%;
@@ -343,17 +405,34 @@
     }
 }
 
+/* RESPONSIVE TABLET - START  */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    /* Các quy tắc CSS cho tablet */
+    .container-vechungtoi_img>img {
+        z-index: 2;
+        width: 350px;
+        height: 350px;
+        margin-top: 70px;
+    }
+
+    .vechungtoi {
+        color: red;
+    }
+
+
+
+}
+
+/* RESPONSIVE TABLET - END  */
 
 
 
 
-.container-vechungtoi {
-    width: 95%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 10%; */
+.container-DanhMucSanPham {
+    width: 100%;
+    height: auto;
 }
 
 .container-vechungtoi_thongtin>h1 {
