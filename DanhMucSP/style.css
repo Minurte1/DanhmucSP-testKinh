@@ -175,6 +175,7 @@
 
 .DanhmucSP:hover>.mucngang {
     transform: scaleY(1);
+
     /* Khi hover vào, thay đổi scaleY thành 1 để phần tử dài ra */
 }
 
@@ -369,4 +370,5 @@
 .container-vechungtoi_img>img {
     max-width: 450px;
     max-height: 450px;
+    margin-top: 70px;
 }
