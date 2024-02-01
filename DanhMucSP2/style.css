@@ -254,6 +254,44 @@ a {
     background-color: transparent;
 }
 
+.wrap-project .wrap-thumb img {
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.project-title:hover {
+    color: var(--primary);
+}
+
+
+.project-title {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.4s;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+.project-local {
+    color: white;
+}
+
 .wrap-content {
     position: absolute;
     bottom: 50px;
@@ -281,6 +319,24 @@ a {
     transition: 0.5s;
 }
 
+.wrap-project:hover .bg-cover {
+    transform: perspective(400px) rotateX(0deg) scaleY(1);
+
+}
+
+.wrap-favicon img {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
 .bg-cover {
     position: absolute;
     width: 100%;
@@ -301,6 +357,7 @@ span.line-1 {
     top: 0;
     transform: scaleY(0);
     transform-origin: top;
+    background-color: #da7a0f;
 }
 
 .line-1,
@@ -319,6 +376,7 @@ span.line-2 {
     bottom: 60px;
     transform: scaleX(0);
     transform-origin: left;
+    background-color: #da7a0f;
 }
 
 .line-1,
@@ -327,4 +385,30 @@ span.line-2 {
     background: var(--primary);
     transition-duration: 0.5s;
     transition-delay: 0s;
+}
+
+.wrap-project:hover .line-2 {
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+}
+
+.wrap-project:hover .line-1 {
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+
+.wrap-project:hover .wrap-content {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.8s;
+}
+
+.wrap-project:hover .wrap-favicon {
+    transform: scale(1);
+    transition-delay: 0.5s;
+}
+
+.wrap-project:hover a {
+    text-decoration: none;
+    color: #da7a0f;
 }
