@@ -249,7 +249,7 @@ h6 {
 }
 
 a {
-    color: unset;
+    /* color: unset; */
     text-decoration: none;
     background-color: transparent;
 }
@@ -269,7 +269,7 @@ img {
 }
 
 .project-title:hover {
-    color: var(--primary);
+    color: #da7a0f;
 }
 
 
@@ -282,10 +282,11 @@ img {
 }
 
 a {
-    color: unset;
+    /* color: unset; */
     text-decoration: none;
     background-color: transparent;
     color: white;
+
 }
 
 .project-local {
@@ -410,5 +411,5 @@ span.line-2 {
 
 .wrap-project:hover a {
     text-decoration: none;
-    color: #da7a0f;
+    /* color: #da7a0f; */
 }
